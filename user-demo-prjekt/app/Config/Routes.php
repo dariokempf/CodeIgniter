@@ -8,3 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/page1', 'page1::index');
 $routes->get('/about','about::index');
+
+$routes->resource('api/v1/cars');
