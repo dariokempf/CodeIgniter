@@ -11,6 +11,7 @@ class Cars extends Migration
         $this->db->query("CREATE TABLE cars
             (
                 id INT(11) UNSIGNED AUTO_INCREMENT,
+                api_key INT(11),
                 car_brand VARCHAR(255),
                 car_name VARCHAR(255),
                 color_hex VARCHAR(6),
